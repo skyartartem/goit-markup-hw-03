@@ -1,0 +1,288 @@
+/* встановлює глобальні змінні кольори */
+:root {
+  --main-bgrnd-color: #ffffff;
+  --accent-color: #2196f3;
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --text-color-on-drk-bgrd: #ffffff;
+  --drk-bgrd-color: #2f303a;
+}
+
+/* Встановлює глобальні параметри на всю сторінку*/
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  background-color: var(--main-bgrnd-color);
+}
+
+/* Приберає підкреслення з лінків*/
+
+.links {
+  text-decoration: none;
+}
+/* Приберає крапки в списках */
+
+.list {
+  list-style: none;
+}
+
+/* Приберає margin знизу картинки */
+
+img {
+  display: block;
+}
+
+/* Стилізування логотипу капелюха */
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+}
+
+.logo.black {
+  color: var(--secondary-text-color);
+}
+
+/* ======== Стилізація навігації ======== */
+
+.site-nav .links {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+.site-nav .links.current {
+  color: var(--accent-color);
+}
+.site-nav .links:hover,
+.site-nav .links:focus {
+  color: var(--accent-color);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Стилізація контактів в капелюсі */
+
+.header-contact {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+.header-contact:hover,
+.header-contact:focus {
+  color: var(--accent-color);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Стилізація секції -герой- */
+
+.hero {
+  background-color: var(--drk-bgrd-color);
+  color: var(--text-color-on-drk-bgrd);
+  text-align: center;
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.hero-button {
+  border: none;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  color: var(--text-color-on-drk-bgrd);
+  padding: 15px 32px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* встановлення ховера для кнопки форми */
+
+.hero-button:hover {
+  transform: translate(-1px, -1px);
+  filter: drop-shadow(4px 4px 4px rgba(255, 255, 255, 0.43));
+}
+
+/* Стилізуємо секцію -переваги- */
+
+.list.benefits {
+  display: flex;
+}
+
+.sec-benefits > .title-benefits {
+  display: none;
+}
+.sec-benefits .title-item {
+  color: var(--secondary-text-color);
+  font-size: 1em;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.benefits-card {
+  margin: 15px;
+}
+
+/* Стилізуємо секцию -чим ми займаэмося- */
+
+.sec-what .title,
+.sec-team .title 
+{
+  color: var(--secondary-text-color);
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+}
+.list.box {
+  display: flex;
+}
+.list.box > .photo {
+  margin: 15px;
+}
+
+/* ====== Стилізуємо секцію -команда- ====== */
+
+.sec-team {
+  background-color: #f5f4fa;
+}
+
+.position-card {
+  background-color: var(--main-bgrnd-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.list.team {
+  display: flex;
+}
+.list.team > .position-card {
+  margin: 15px;
+}
+
+.sec-team .name-position {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.187;
+  text-align: center;
+}
+.sec-team .position {
+  font-size: 16px;
+  line-height: 1.187;
+  text-align: center;
+}
+
+/* Доповнює стилізацію нижнього логотипа */
+
+.logo.white {
+  color: var(--text-color-on-drk-bgrd);
+}
+
+/* ======= Стилізация футера =========== */
+
+.footer {
+  background-color: var(--drk-bgrd-color);
+}
+
+.adrs {
+  font-style: normal;
+  color: var(--text-color-on-drk-bgrd);
+}
+/* .adrs:hover,
+.adrs:focus {
+  color: var(--accent-color);
+} */
+
+.mail {
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+}
+/* .mail:hover,
+.mail:focus {
+  color: var(--accent-color);
+} */
+
+.tel {
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+}
+/* .tel:hover,
+.tel:focus {
+  color: var(--accent-color);
+} */
+
+/* стилізація сторінки -портфоліо- */
+
+.portfolio-title {
+  display: none;
+}
+
+/* Стилізація кнопок вибору категорії */
+
+.categories {
+  display: flex;
+}
+.categories-but {
+  margin: 4px;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  color: var(--secondary-text-color);
+  background: #f5f4fa;
+  border-radius: 4px;
+  padding: 7px 22px;
+  cursor: pointer;
+}
+
+.categories-but.current {
+  color: var(--text-color-on-drk-bgrd);
+  background-color: var(--accent-color);
+}
+
+.categories-but:hover,
+.categories-but:focus {
+  color: var(--text-color-on-drk-bgrd);
+  background: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* ========= Стилізація галереї ========== */
+
+.list.project {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  border: 1px solid #eeeeee;
+  margin: 15px;
+}
+.name-project {
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project-card .project {
+  font-size: 16px;
+  line-height: 1.88;
+}
