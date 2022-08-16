@@ -110,8 +110,15 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
-  margin-right: 50px;
+ 
 }
+
+.site-nav>.items:not(:last-child),
+.list>.items:not(:last-child) {
+   margin-right: 50px;
+}
+
+
 .site-nav .links.current {
      color: var(--accent-color);
 }
@@ -122,19 +129,21 @@ img {
 }
 
 /* Стилізація контактів в капелюсі */
+
 .contacts {
    /* outline: 1px solid black; */
   display: flex;
 
 }
 
+
 .header-contact {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
-  margin-left: 50px;
-}
+  }
+
 .header-contact:hover,
 .header-contact:focus {
   color: var(--accent-color);
@@ -353,10 +362,25 @@ padding-bottom: 94px;
 .categories {
   display: flex;
   justify-content:center;
-  
+
 }
-.categories-but {
+
+
+
+
+
+.categories.list li:not(:last-child) {
   margin-right: 8px;
+}
+
+
+
+
+
+
+
+.categories-but {
+  /* margin-right: 8px; */
   margin-bottom: 34px;
   border: none;
   font-family: inherit;
