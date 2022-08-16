@@ -335,7 +335,17 @@ padding-bottom: 94px;
 /* стилізація сторінки -портфоліо- */
 
 .portfolio-title {
-  display: none;
+  /* display: none; */
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
 /* Стилізація кнопок вибору категорії */
@@ -346,7 +356,8 @@ padding-bottom: 94px;
   
 }
 .categories-but {
-  /* margin: 4px; */
+  margin-right: 8px;
+  margin-bottom: 34px;
   border: none;
   font-family: inherit;
   font-weight: 500;
@@ -356,7 +367,7 @@ padding-bottom: 94px;
   color: var(--secondary-text-color);
   background: #f5f4fa;
   border-radius: 4px;
-  padding: 7px 22px;
+  padding: 6px 22px;
   cursor: pointer;
 }
 
@@ -379,12 +390,13 @@ padding-bottom: 94px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  
   }
 
 .project-card {
     border-bottom: 1px solid var(--cards-border-color);
-  /* margin: 15px; */
-}
+    margin-bottom: 30px;
+  }
 
 .name-project {
   color: var(--secondary-text-color);
@@ -394,6 +406,8 @@ padding-bottom: 94px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  padding-left: 24px;
+  padding-top: 20px;
 }
 
 .project-card .project {
@@ -401,4 +415,7 @@ padding-bottom: 94px;
   border-right: 1px solid var(--cards-border-color);
   font-size: 16px;
   line-height: 1.88;
+  padding-left: 24px;
+  padding-top: 4px;
+  padding-bottom: 20px;
 }

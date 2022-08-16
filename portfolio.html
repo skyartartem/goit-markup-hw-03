@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Студія</title>
 
-    <!-- Fonts -->
+    <!------------ Fonts ----------------->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,55 +14,67 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+  
+    <!---------- Підключення css стилів ------------->
 
-    <!-- Підключення css стиля -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
 
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
-    <!-- Капелюх -->
+    <!------------------ Капелюх ------------------>
 
-    <header>
-      <nav>
-        <!-- Логотип чорний -->
+    <header class="header">
 
-        <a class="logo links" href="./index.html"
-          >Web<span class="logo black">Studio</span></a
-        >
+        <!-- Контейнер хедера -->
 
-        <!-- Навігація -->
+        <div class="container">
+  
+            <nav class="navigation">
 
-        <ul class="site-nav list">
-          <li><a class="links" href="./">Студія</a></li>
-          <li>
-            <a class="links current" href="./portfolio.html">Портфоліо</a>
-          </li>
-          <li><a class="links" href="./">Контакти</a></li>
-        </ul>
-      </nav>
+               <!-- Логотип чорний -->
 
-      <!-- Контакти в капелюсі чомусь окремо від навігаціі -->
+                <a class="logo links" href="./index.html"
+                >Web<span class="logo black">Studio</span></a
+                >
 
-      <ul class="list">
-        <li>
-          <a class="header-contact links" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a class="header-contact links" href="tel:+380961111111"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+                  <!------------------ Навігація ---------------->
+
+                <ul class="site-nav list">
+                  <li><a class="links " href="./">Студія</a></li>
+                  <li><a class="links current" href="./portfolio.html">Портфоліо</a></li>
+                  <li><a class="links" href="./">Контакти</a></li>
+                </ul>
+            </nav>
+
+                  <!-- Контакти в капелюсі чомусь окремо від навігаціі -->
+
+                <ul class="list contacts">
+                  <li>
+                  <a class="header-contact links" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                  </li>
+                  <li>
+                      <a
+                        class="header-contact links"
+                        href="tel:+380961111111"
+                        >+38 096 111 11 11</a
+                      >
+                  </li>
+                </ul>
+        </div>
     </header>
 
     <main>
       <!-- секція Галерея -->
 
-      <section>
-        <h1 class="portfolio-title">PORTFOLIO PAGE</h1>
+      <section class="section">
+
+        <div class="container">
+
+          <h1 class="portfolio-title">PORTFOLIO PAGE</h1>
 
         <!-- Кнопки вибору категорій -->
 
@@ -198,19 +210,23 @@
             <p class="project">Додаток</p>
           </li>
         </ul>
+
+        </div>
+
       </section>
     </main>
 
     <!----------- Футер ------------>
 
-    <footer class="footer">
-      <!---------- Логотип білий --------->
+     <footer class="footer">
+
+     <div class="container">
+      <!----------- Логотип білий ---------------->
 
       <a class="logo links" href="./index.html"
         >Web<span class="logo white">Studio</span></a
       >
-      <!----------- Адресса ------------>
-
+      <!------------- Адресса -------------->
       <address>
         <ul class="list">
           <li>
@@ -228,10 +244,16 @@
             >
           </li>
           <li>
-            <a class="links tel" href="tel:+380961111111">+38 096 111 11 11</a>
+            <a
+              class="links tel"
+              href="tel:+380961111111"
+               >+38 096 111 11 11</a
+            >
           </li>
         </ul>
       </address>
+     </div>
+
     </footer>
   </body>
 </html>
