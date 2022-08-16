@@ -14,47 +14,57 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+  
     <!---------- Підключення css стилів ------------->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
 
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
     <!------------------ Капелюх ------------------>
-    <header>
-      <nav>
 
-        <!-- Логотип чорний -->
+    <header class="header">
 
-        <a class="logo links" href="./index.html"
-          >Web<span class="logo black">Studio</span></a
-        >
+        <!-- Контейнер хедера -->
 
-        <!------------------ Навігація ---------------->
+        <div class="container">
+  
+            <nav class="navigation">
 
-        <ul class="site-nav list">
-          <li><a class="links current" href="./">Студія</a></li>
-          <li><a class="links" href="./portfolio.html">Портфоліо</a></li>
-          <li><a class="links" href="./">Контакти</a></li>
-        </ul>
-      </nav>
+               <!-- Логотип чорний -->
 
-      <!-- Контакти в капелюсі чомусь окремо від навігаціі -->
+                <a class="logo links" href="./index.html"
+                >Web<span class="logo black">Studio</span></a
+                >
 
-      <ul class="list">
-        <li>
-          <a class="header-contact links" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a
-            class="header-contact links"
-            href="tel:+380961111111"
-             >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+                  <!------------------ Навігація ---------------->
+
+                <ul class="site-nav list">
+                  <li><a class="links current" href="./">Студія</a></li>
+                  <li><a class="links" href="./portfolio.html">Портфоліо</a></li>
+                  <li><a class="links" href="./">Контакти</a></li>
+                </ul>
+            </nav>
+
+                  <!-- Контакти в капелюсі чомусь окремо від навігаціі -->
+
+                <ul class="list contacts">
+                  <li>
+                  <a class="header-contact links" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                  </li>
+                  <li>
+                      <a
+                        class="header-contact links"
+                        href="tel:+380961111111"
+                        >+38 096 111 11 11</a
+                      >
+                  </li>
+                </ul>
+        </div>
     </header>
 
     <main>
@@ -62,15 +72,17 @@
       <!-------------- Герой ---------------->
 
       <section class="hero">
-        <h1 class="hero-title">Ефективні рішення для <br />вашого бізнесу</h1>
+        <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
         <button class="hero-button" type="button">Замовити послугу</button>
       </section>
 
       <!------------- Переваги ---------------->
 
-      <section class="sec-benefits">
+      <section class="section benefits">
 
-        <!------- заголовок секції який буде сховано----- -->
+        <div class="container">
+
+            <!------- заголовок секції який буде сховано----- -->
 
         <h2 class="title-benefits">Наші переваги</h2>
 
@@ -117,12 +129,18 @@
 
         </ul>
         
+
+        </div>
+        
       </section>
 
       <!------------- Чим ми займаємося ---------->
 
-      <section class="sec-what">
-        <h2 class="title">Чим ми займаємося</h2>
+      <section class="section what">
+       
+        <div class="container">
+
+           <h2 class="title">Чим ми займаємося</h2>
         <ul class="list box">
           <li class="photo">
             <img src="./images/img-01.jpg" alt="codding process" width="370" />
@@ -132,24 +150,32 @@
             <img src="./images/img-03.jpg" alt="color matching" width="370" />
           </li>
         </ul>
+
+        </div>
+
       </section>
 
       <!---------- Наша команда -------------->
 
-      <section class="sec-team">
+      <section class="section team">
+
+        <div class="container">
+
+          
         <h2 class="title">Наша команда</h2>
         <ul class="list team">
           <li class="position-card">
-            <img
+            <img class="photo-pisition"
               src="./images/photo-01.jpg"
               alt="Product Designer portrait"
               width="270"
+              
             />
             <h3 class="name-position">Ігор Дем'яненко</h3>
             <p class="position">Product Designer</p>
           </li>
           <li class="position-card">
-            <img
+            <img class="photo-pisition"
               src="./images/photo-02.jpg"
               alt="Frontend Developer portrait"
               width="270"
@@ -158,7 +184,7 @@
             <p class="position">Frontend Developer</p>
           </li>
           <li class="position-card">
-            <img
+            <img class="photo-pisition"
               src="./images/photo-03.jpg"
               alt="Marketing manager portrait"
               width="270"
@@ -167,7 +193,7 @@
             <p class="position">Marketing</p>
           </li>
           <li class="position-card">
-            <img
+            <img class="photo-pisition"
               src="./images/photo-04.jpg"
               alt="UI Designer portrait"
               width="270"
@@ -176,6 +202,9 @@
             <p class="position">UI Designer</p>
           </li>
         </ul>
+          
+        </div>
+       
       </section>
     </main>
 
@@ -183,6 +212,7 @@
 
     <footer class="footer">
 
+     <div class="container">
       <!----------- Логотип білий ---------------->
 
       <a class="logo links" href="./index.html"
@@ -214,6 +244,8 @@
           </li>
         </ul>
       </address>
+     </div>
+
     </footer>
   </body>
 </html>

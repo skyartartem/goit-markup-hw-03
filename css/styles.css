@@ -6,9 +6,11 @@
   --secondary-text-color: #212121;
   --text-color-on-drk-bgrd: #ffffff;
   --drk-bgrd-color: #2f303a;
+  --cards-border-color: #eeeeee;
 }
 
 /* Встановлює глобальні параметри на всю сторінку*/
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -18,14 +20,24 @@ body {
   background-color: var(--main-bgrnd-color);
 }
 
+/* Приберає зайві маржини і падінги в текстових блоках*/
+
+h1, h2, h3, h4, p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* Приберає підкреслення з лінків*/
 
 .links {
-  text-decoration: none;
+   text-decoration: none;
 }
-/* Приберає крапки в списках */
+
+/* Приберає крапки в списках та падинги */
 
 .list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -35,6 +47,38 @@ img {
   display: block;
 }
 
+/* Стилізація капелюха */
+
+.header { 
+  border-bottom: 1px solid #ECECEC;
+  /* Нижній бордер */
+}
+
+.container {
+  width: 1230px;
+  margin: 0 auto;
+  /* border: 1px solid tomato; */
+  padding-left: 15px;
+  padding-right: 15px;
+ 
+}
+
+.header>.container {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   
+}
+
+
+.navigation {
+  display: flex;
+  /* border: 1px solid black; */
+  align-items: center;
+  
+}
 /* Стилізування логотипу капелюха */
 
 .logo {
@@ -44,22 +88,32 @@ img {
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
+  /* border: 1px solid black; */
 }
 
 .logo.black {
   color: var(--secondary-text-color);
 }
+.navigation .logo.links {
+  margin-right: 93px;
+}
 
 /* ======== Стилізація навігації ======== */
+.site-nav {
+   /* border: 1px solid black; */
+  display: flex;
+  }
 
 .site-nav .links {
+  /* border: 1px solid black; */
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+  margin-right: 50px;
 }
 .site-nav .links.current {
-  color: var(--accent-color);
+     color: var(--accent-color);
 }
 .site-nav .links:hover,
 .site-nav .links:focus {
@@ -68,12 +122,18 @@ img {
 }
 
 /* Стилізація контактів в капелюсі */
+.contacts {
+   /* outline: 1px solid black; */
+  display: flex;
+
+}
 
 .header-contact {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+  margin-left: 50px;
 }
 .header-contact:hover,
 .header-contact:focus {
@@ -87,12 +147,19 @@ img {
   background-color: var(--drk-bgrd-color);
   color: var(--text-color-on-drk-bgrd);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
+  width: 696px;
+  /* margin-top: 0; */
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding: 0; */
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -100,11 +167,12 @@ img {
   border: none;
   font-family: inherit;
   font-size: 16px;
+  line-height: 1.88;
   font-weight: 700;
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
   color: var(--text-color-on-drk-bgrd);
-  padding: 15px 32px;
+  padding: 10px 32px;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -117,45 +185,70 @@ img {
 
 /* Стилізуємо секцію -переваги- */
 
-.list.benefits {
-  display: flex;
+.section {
+/* border: 1px solid tomato; */
+padding-top: 94px;
+padding-bottom: 94px;
+}
+.section.benefits {
+  padding-bottom: 0px;
 }
 
-.sec-benefits > .title-benefits {
-  display: none;
+
+.list.benefits {
+  display: flex;
+  justify-content: space-between;
 }
-.sec-benefits .title-item {
+
+.section.benefits .title-benefits {
+  /* display: none; */
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.section.benefits .title-item {
   color: var(--secondary-text-color);
   font-size: 1em;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .benefits-card {
-  margin: 15px;
+  width: 270px;
+  /* margin: 15px; */
 }
 
 /* Стилізуємо секцию -чим ми займаэмося- */
 
-.sec-what .title,
-.sec-team .title 
+.section  .title
 {
   color: var(--secondary-text-color);
   font-size: 36px;
   line-height: 1.167;
   text-align: center;
+  margin-bottom: 50px;
 }
 .list.box {
   display: flex;
+  justify-content: space-between;
 }
 .list.box > .photo {
-  margin: 15px;
+ /* border: 1px solid tomato; */
 }
 
 /* ====== Стилізуємо секцію -команда- ====== */
 
-.sec-team {
-  background-color: #f5f4fa;
+.section.team {
+   background-color: #f5f4fa;
 }
 
 .position-card {
@@ -167,34 +260,47 @@ img {
 
 .list.team {
   display: flex;
+  justify-content: space-between;
 }
-.list.team > .position-card {
-  margin: 15px;
-}
+.list.team .photo-pisition {
+  margin-bottom: 30px;
+  }
 
-.sec-team .name-position {
+.section.team .name-position {
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.187;
   text-align: center;
+  margin-bottom: 10px;
 }
-.sec-team .position {
+.section.team .position {
   font-size: 16px;
   line-height: 1.187;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 /* Доповнює стилізацію нижнього логотипа */
 
 .logo.white {
   color: var(--text-color-on-drk-bgrd);
-}
+  }
 
 /* ======= Стилізация футера =========== */
 
 .footer {
+ 
   background-color: var(--drk-bgrd-color);
+}
+.footer .container {
+ padding: 60px 15px;
+}
+
+.links.adrs {
+  display:block;
+  margin-top: 20px;
+  margin-bottom: 9px;
 }
 
 .adrs {
@@ -207,8 +313,10 @@ img {
 } */
 
 .mail {
+  display: block;
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 9px;
 }
 /* .mail:hover,
 .mail:focus {
@@ -234,9 +342,11 @@ img {
 
 .categories {
   display: flex;
+  justify-content:center;
+  
 }
 .categories-but {
-  margin: 4px;
+  /* margin: 4px; */
   border: none;
   font-family: inherit;
   font-weight: 500;
@@ -268,14 +378,18 @@ img {
 .list.project {
   display: flex;
   flex-wrap: wrap;
-}
+  justify-content: space-between;
+  }
 
 .project-card {
-  border: 1px solid #eeeeee;
-  margin: 15px;
+    border-bottom: 1px solid var(--cards-border-color);
+  /* margin: 15px; */
 }
+
 .name-project {
   color: var(--secondary-text-color);
+   border-left: 1px solid var(--cards-border-color);
+  border-right: 1px solid var(--cards-border-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -283,6 +397,8 @@ img {
 }
 
 .project-card .project {
+  border-left: 1px solid var(--cards-border-color);
+  border-right: 1px solid var(--cards-border-color);
   font-size: 16px;
   line-height: 1.88;
 }
