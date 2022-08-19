@@ -256,9 +256,10 @@ padding-bottom: 94px;
   justify-content: space-between;
 }
 
-/* .list.box > .photo {
- border: 1px solid tomato;
-} */
+.list.box > .photo {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
 
 /* ====== Стилізуємо секцію -команда- ====== */
 
@@ -420,8 +421,10 @@ padding-bottom: 94px;
   }
 
 .project-card {
-    /* border-bottom: 1px solid var(--cards-border-color); */
     margin: 15px;
+    /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px; */
   }
 
   .list.project .box {
@@ -429,9 +432,10 @@ padding-bottom: 94px;
     border-right: 1px solid var(--cards-border-color);
     border-bottom: 1px solid var(--cards-border-color);
     padding: 20px 24px;
+    border-radius: 0px 0px 4px 4px; 
   }
 
-.name-project {
+.box .name-project {
   color: var(--secondary-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -441,8 +445,15 @@ padding-bottom: 94px;
   margin-bottom: 4px;
 }
 
-.project-card .project {
+.box .project {
+  color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.88;
   /* border: 1px solid tomato; */
 }
+
+.project-card:hover {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+} 
