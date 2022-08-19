@@ -63,9 +63,13 @@ img {
  
 }
 
-.header>.container {
+.header {
   padding-top: 25px;
   padding-bottom: 25px;
+}
+
+.header>.container {
+ 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -273,8 +277,10 @@ padding-bottom: 94px;
   display: flex;
   justify-content: space-between;
 }
-.list.team .photo-pisition {
-  margin-bottom: 30px;
+.position-box {
+ /* border: 1px solid tomato; */
+  padding-bottom: 30px;
+  padding-top: 30px;
   }
 
 .section.team .name-position {
@@ -289,7 +295,7 @@ padding-bottom: 94px;
   font-size: 16px;
   line-height: 1.187;
   text-align: center;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
 /* Доповнює стилізацію нижнього логотипа */
@@ -301,22 +307,33 @@ padding-bottom: 94px;
 /* ======= Стилізация футера =========== */
 
 .footer {
-   background-color: var(--drk-bgrd-color);
-
-}
-.footer .container {
- padding: 60px 15px;
+  background-color: var(--drk-bgrd-color);
+  padding: 60px 0;
 }
 
+.footer .logo.links {
+  display: inline-block;
+  margin-bottom: 20px;
+  /* outline: 1px solid tomato; */
+}
 
 .links.adrs {
-  display:inline-block;
-  margin-top: 20px;
+  display: inline-block;
   font-style: normal;
-  margin-bottom: 9px;
   color: var(--text-color-on-drk-bgrd);
 }
 
+.adrs li:not(:last-child) {
+  /* border: 1px solid tomato; */
+ margin-bottom: 9px; 
+}
+
+/* не розумію чому нижній стиль не працює а верхній працює  */
+ 
+/* .adrs-item:not(:last-child) {
+  margin-bottom: 9 px;
+  border: 1px solid tomato;
+} */
 
 /* .adrs:hover,
 .adrs:focus {
@@ -324,17 +341,17 @@ padding-bottom: 94px;
 } */
 
 .mail {
-  display: inline-block;
+  /* display: inline-block; */
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 9px;
-}
+ }
 /* .mail:hover,
 .mail:focus {
   color: var(--accent-color);
 } */
 
 .tel {
+  /* display: inline-block; */
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -364,6 +381,7 @@ padding-bottom: 94px;
 .categories {
   display: flex;
   justify-content:center;
+  margin-bottom: 50px;
 
 }
 
@@ -372,7 +390,6 @@ padding-bottom: 94px;
 }
 
 .categories-but {
-  margin-bottom: 34px;
   border: none;
   font-family: inherit;
   font-weight: 500;
@@ -409,28 +426,28 @@ padding-bottom: 94px;
   }
 
 .project-card {
-    border-bottom: 1px solid var(--cards-border-color);
+    /* border-bottom: 1px solid var(--cards-border-color); */
     margin: 15px;
   }
 
 .name-project {
   color: var(--secondary-text-color);
-  border-left: 1px solid var(--cards-border-color);
-  border-right: 1px solid var(--cards-border-color);
+  /* border-left: 1px solid var(--cards-border-color);
+  border-right: 1px solid var(--cards-border-color); */
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  padding-left: 24px;
-  padding-top: 20px;
+  /* padding-left: 24px;
+  padding-top: 20px; */
 }
 
 .project-card .project {
-  border-left: 1px solid var(--cards-border-color);
-  border-right: 1px solid var(--cards-border-color);
+  /* border-left: 1px solid var(--cards-border-color);
+  border-right: 1px solid var(--cards-border-color); */
   font-size: 16px;
   line-height: 1.88;
-  padding-left: 24px;
+  /* padding-left: 24px;
   padding-top: 4px;
-  padding-bottom: 20px;
+  padding-bottom: 20px; */
 }
