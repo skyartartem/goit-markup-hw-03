@@ -323,17 +323,11 @@ padding-bottom: 94px;
   color: var(--text-color-on-drk-bgrd);
 }
 
-.adrs li:not(:last-child) {
-  /* border: 1px solid tomato; */
- margin-bottom: 9px; 
-}
-
-/* не розумію чому нижній стиль не працює а верхній працює  */
  
-/* .adrs-item:not(:last-child) {
-  margin-bottom: 9 px;
-  border: 1px solid tomato;
-} */
+.adrs .adrs-item:not(:last-child) {
+  margin-bottom: 9px;
+  /* border: 1px solid tomato; */
+}
 
 /* .adrs:hover,
 .adrs:focus {
@@ -430,24 +424,25 @@ padding-bottom: 94px;
     margin: 15px;
   }
 
+  .list.project .box {
+    border-left: 1px solid var(--cards-border-color);
+    border-right: 1px solid var(--cards-border-color);
+    border-bottom: 1px solid var(--cards-border-color);
+    padding: 20px 24px;
+  }
+
 .name-project {
   color: var(--secondary-text-color);
-  /* border-left: 1px solid var(--cards-border-color);
-  border-right: 1px solid var(--cards-border-color); */
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  /* padding-left: 24px;
-  padding-top: 20px; */
+  /* border: 1px solid tomato; */
+  margin-bottom: 4px;
 }
 
 .project-card .project {
-  /* border-left: 1px solid var(--cards-border-color);
-  border-right: 1px solid var(--cards-border-color); */
   font-size: 16px;
   line-height: 1.88;
-  /* padding-left: 24px;
-  padding-top: 4px;
-  padding-bottom: 20px; */
+  /* border: 1px solid tomato; */
 }
